@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+/*
+#e0e0e0;
+#34AF6D;
+#ddd;
+#333;
+#f0f2f5;
+#e0e0e0;
+#2e9f60;
+#4CAF50;
+#45a049;
+#da190b;
+#1976D2;
+#2196F3;
+#475d7d
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: #333;
+}
+
+nav.menu-lateral{
+    width: 45px;
+    height: 100%;
+    background-color: #f0f2f5;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #45a049;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #475d7d;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .5s;
+}
+
+ul li.ativo{
+    background-color: #45a049;
+}
+
+ul li.item-menu:hover{
+    background: #45a049;
+} 
+
+ul li.item-menu a{
+    color: #475d7d;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: -1px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+
+ul li.item-menu a .icon > i{
+    font-size: 25px;
+}
